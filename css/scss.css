@@ -223,6 +223,7 @@ li {
   .header__menu.active {
     top: 0;
     height: 100%;
+    text-align: center;
   }
   .header__burger {
     display: block;
@@ -936,11 +937,46 @@ li {
   }
 }
 
+.car__shine-2 {
+  position: absolute;
+  top: 37%;
+  left: 90%;
+  opacity: 0;
+  -webkit-animation: op 1.5s infinite;
+          animation: op 1.5s infinite;
+}
+
 .car__shine {
   position: absolute;
   top: 37%;
   left: 55%;
-  display: block;
+  opacity: 0;
+  -webkit-animation: op 1.5s infinite;
+          animation: op 1.5s infinite;
+}
+
+@-webkit-keyframes op {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes op {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .full-screen-3 {
