@@ -6,10 +6,8 @@ $(document).ready(function() {
 
 $('.reviews__slider').slick({
 	slidesToShow: 1,
+	slidesToScroll: 1,
+	autoplay: true,
+	autoplaySpeed: 5000
 });
 
-$(window).load(function () {
-	setTimeout(function () {
-		$(".car__shine").addClass('show');
-	}, 1000);
-});
